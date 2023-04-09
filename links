@@ -7,6 +7,41 @@ https://vast-coast-73046.herokuapp.com/
 //vendors app
 https://young-lake-17619.herokuapp.com/
 
+sudo ssh -i first.pem ec2-user@13.54.168.28
 
+// deployment
+sudo apt-get install npm
+npm i -g n
+n latest
+
+app.use(express.static("static"));npm install pm2@latest -g
+
+apt install nginix
+
+cd /etc/nginix
+cd site-available
+
+# root /var/www/html
+
+proxy_pass http://localhost:1337;
+
+sudo servie restart nginx restart
+
+app.get("*",( req, res )=>{
+    res.sendFile(path.join(__dirname, "static/index.html") )
+} )
+
+
+above location
+
+server_name webx.ssh
+sudo nginix -t
+sudo systemctl reload nginx
+
+sudo ufw stattus
+sudo ufw allow 'Nginx Full'
+
+
+certbot --nginx -d webx.sh
 
 https://codepen.io/Hyperplexed/pen/oNbGaBJ
