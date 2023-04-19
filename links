@@ -25,7 +25,11 @@ cd site-available
 
 proxy_pass http://localhost:1337;
 
+sudo npm install -g @angular/cli
+
 sudo servie restart nginx restart
+sudo nginx -t
+sudo systemctl restart nginx
 
 app.get("*",( req, res )=>{
     res.sendFile(path.join(__dirname, "static/index.html") )
